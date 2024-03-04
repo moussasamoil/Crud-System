@@ -1,0 +1,53 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container py-5 bg-info">
+        <div class="row w-75 mx-auto">
+            <div class="div py-3">
+                <label for="proudctName">Proudct Name</label>
+                <input type="text" id="proudctName" class="form-control">
+            </div>
+            <div class="div py-3">
+                <label for="proudctPrice">Proudct Price</label>
+                <input type="text" id="proudctPrice" class="form-control">
+            </div>
+            <div class="div py-3">
+                <label for="proudctCategory">proudct Category</label>
+                <input type="text" id="proudctCategory" class="form-control">
+            </div>
+            <div class="div py-3">
+                <label for="proudctDesc">Proudct Description</label>
+                <textarea type="text" id="proudctDesc" class="form-control"></textarea>
+            </div>
+            <div class="div ">
+                <button id="AddProudct" onclick="addProduct()" class="btn btn-primary w-auto py-3">Add Proudct</button>
+            </div>
+        </div>
+    </div>
+    <div class="div w-75 mx-auto py-3">
+        <label class="fs-4" for="searchProudct">Search Proudct</label>
+        <input type="text" id="searchProudct" onkeyup="searchProudct(this.value)" class="form-control">
+    </div>
+    <div class="container">
+        <table class="table table-striped mx-auto">
+            <thead>
+                <th>Index</th>
+                <th>Proudct Name</th>
+                <th>Proudect Price</th>
+                <th>Proudect Category</th>
+                <th>Proudect Description</th>
+                <th>Delete</th>
+                <th>Upadte</th>
+            </thead>
+            <tbody id="tableData">
+            </tbody>
+        </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
